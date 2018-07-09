@@ -83,7 +83,7 @@ create table RideBusInfo
 /*==============================================================*/
 create table Shift
 (
-   shift_id             varchar(10) not null,
+   shift_id             varchar(20) not null,
    line_name            varchar(50),
    line_name_cn         varchar(50),
    line_type			varchar(50),
