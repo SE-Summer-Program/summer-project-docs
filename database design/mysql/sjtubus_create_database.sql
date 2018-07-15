@@ -25,8 +25,8 @@ drop table if exists Line;
 /*==============================================================*/
 create table Appointment
 (
-   appoinment_id        int not null,
-   user_id              varchar(10),
+   appoinment_id        int not null auto_increment,
+   user_id              int,
    shift_id             varchar(10),
    appoint_date         date,
    line_name            varchar(50),
@@ -39,8 +39,8 @@ create table Appointment
 /*==============================================================*/
 create table Bus
 (
-   bus_id               varchar(10) not null,
-   driver_id            varchar(10),
+   bus_id               int not null auto_increment,
+   driver_id            int,
    shift_id             varchar(10),
    seat_num             int check (seat_num >= 0),
    plate_num            varchar(50),
@@ -52,7 +52,7 @@ create table Bus
 /*==============================================================*/
 create table Driver
 (
-   driver_id            varchar(10) not null,
+   driver_id            int not null auto_increment,
    username                varchar(50),
    password           varchar(50),
    phone 				varchar(50),
@@ -64,10 +64,10 @@ create table Driver
 /*==============================================================*/
 create table RideBusInfo
 (
-   ride_id              varchar(10) not null,
+   ride_id              int not null auto_increment,
    ride_date            date,
-   shift_id             varchar(10),
-   bus_id				varchar(10),
+   shift_id             varchar(10), 
+   bus_id			int,
    ishoilday            boolean,
    isweekday            boolean,
    reserve_seat        int check (reserve_seat > 0),
@@ -98,11 +98,12 @@ create table Shift
 /*==============================================================*/
 create table Users
 (
-   user_id              varchar(10) not null,
+   user_id              int not null auto_increment, 
    username             varchar(50),
    password             varchar(50),
    credit               int,
    isteacher            boolean,
+   phone 		varchar(50),
    primary key (user_id)
 );
 
@@ -111,9 +112,9 @@ create table Users
 /*==============================================================*/
 create table Administrator
 (
-	id 					varchar(10) not null,
-    a_username			varchar(50),
-    a_password			varchar(50),
+	id 					int not null auto_increment,
+    username			varchar(50),
+    password			varchar(50),
     primary key (id)
 );
 
