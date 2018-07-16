@@ -1,0 +1,3 @@
+1. bus里面的shiftid可以删掉，班次和巴士应该是多对多
+
+2. 考虑一下所有的string id要不要改成int id
