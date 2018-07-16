@@ -1,0 +1,53 @@
+Administrator:
+	login:
+	输入：name和password
+	输出：符合条件的Administrator类或者null
+
+	addAdmin:
+	输入：name和password
+	输出：如果name无重复则添加新管理员并返回true，否则返回false
+
+	resetPassword:
+	输入：id和password
+	输出：根据id修改密码
+
+User：
+	login:
+	输入：name和password
+	输出：符合条件的User类或者null
+
+	getList:
+	输入：无
+	输出：一个List<User>集合，包含所有的User
+
+	getUserById:
+	输入：id
+	输出：符合id的User类或者null
+	
+	getNameById:
+	输入：id
+	输出：符合id的name或者"NULL"
+
+	addUser:
+	输入：name，password，phone，isteacher
+	输出：如果name无重复则添加新用户并返回true，否则返回false
+
+	update:
+	输入：一个User类
+	输出：保存这个User类
+
+	deleteById:
+	输入：一个User类
+	输出：删除这个User类
+
+Line：
+	getStationByLineName:
+	输入：name
+	输出：返回一个List<String>，包含这条线路的所有站点
+
+TimeTable：
+	getScheduleByStationAndType：
+	输入：name和type
+	输出：一个Map<String, List<String>>，为该站点该类型下的时刻表。Map中有两个配对，key为loopline的List存放的班次终点站为菁菁堂，key为nonloopline的List存放的班次终点站为东川路地铁站
+
+	
