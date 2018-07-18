@@ -27,14 +27,14 @@ drop table if exists Line;
 /*==============================================================*/
 create table Appointment
 (
-   appoinment_id        int not null auto_increment,
+   appointment_id        int not null auto_increment,
    user_id              int,
    shift_id             varchar(10),
    username				varchar(50),
    appoint_date         date,
    line_name            varchar(50),
    isnormal             boolean,
-   primary key (appoinment_id)
+   primary key (appointment_id)
 );
 
 /*==============================================================*/

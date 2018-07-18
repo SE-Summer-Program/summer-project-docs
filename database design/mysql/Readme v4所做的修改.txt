@@ -14,3 +14,7 @@
 6. Shift表 新增 arrive_time Time 属性
 
 7. 调整drop table的顺序，将drop Shift 移到drop Bus之前
+
+------------------------------------------------------------
+
+8. 纠正appoint表中appointment_id的拼写错误
