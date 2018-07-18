@@ -17,4 +17,10 @@
 
 ------------------------------------------------------------
 
-8. 纠正appoint表中appointment_id的拼写错误
+v4.1所做的修改
+
+1. 纠正appoint表中appointment_id的拼写错误
+
+2. appoint表添加user_code（yzh用）和submit_time（wxw用）
+
+3. 修改bus的车牌号为三辆校园巴士的真实车牌，校区巴士未知。
