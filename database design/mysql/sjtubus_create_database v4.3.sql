@@ -29,10 +29,14 @@ create table Appointment
 (
    appointment_id        int not null auto_increment,
    user_id              int,
-   shift_id             varchar(10),
+   shift_id             varchar(20),
    username				varchar(50),
+   realname				varchar(50),
+   user_code			varchar(50),
    appoint_date         date,
    line_name            varchar(50),
+   line_name_cn			varchar(50),
+   submit_time			datetime,
    isnormal             boolean,
    primary key (appointment_id)
 );
@@ -68,7 +72,7 @@ create table RideBusInfo
 (
    ride_id              int not null auto_increment,
    ride_date            date,
-   shift_id             varchar(10), 
+   shift_id             varchar(20), 
    bus_id			int,
    ishoilday            boolean,
    isweekday            boolean,
@@ -85,7 +89,7 @@ create table RideBusInfo
 /*==============================================================*/
 create table Shift
 (
-   shift_id             varchar(10) not null,
+   shift_id             varchar(20) not null,
    bus_id 				int,
    line_name            varchar(50),
    line_name_cn         varchar(50),
@@ -138,16 +142,16 @@ create table Administrator
 );
 
 alter table Appointment add constraint FK_Relationship_11 foreign key (shift_id)
-      references Shift (shift_id) on delete restrict on update restrict;
+      references Shift (shift_id) on delete restrict on update cascade;
 
 alter table Bus add constraint FK_Relationship_5 foreign key (driver_id)
-       references Driver (driver_id) on delete restrict on update restrict;
+       references Driver (driver_id) on delete restrict on update cascade;
  
  alter table Shift add constraint FK_Relationship_9 foreign key (bus_id)
-      references Bus (bus_id) on delete restrict on update restrict;
+      references Bus (bus_id) on delete restrict on update cascade;
 
 alter table RideBusInfo add constraint FK_Relationship_7 foreign key (shift_id)
-      references Shift (shift_id) on delete restrict on update restrict;
+      references Shift (shift_id) on delete restrict on update cascade;
       
 alter table RideBusInfo add constraint FK_Relationship_3 foreign key (bus_id)
-      references Bus (bus_id) on delete restrict on update restrict;
+      references Bus (bus_id) on delete restrict on update cascade;
