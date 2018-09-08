@@ -1,6 +1,7 @@
 use sjtu_bus
 db.line.remove({})
 db.timeTable.remove({})
+
 db.line.insert({
         "name" : "LoopLineAntiClockwise",
         "station" : [
