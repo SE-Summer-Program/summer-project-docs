@@ -166,7 +166,7 @@ insert into Shift values('MXWD1830B', '1','MinHangToXuHui', '闵行到徐汇', '
 insert into Shift values('MXWD2040A', '2','MinHangToXuHui', '闵行到徐汇', 'NormalWorkday', '20:40:00', '21:40:00', '5', '共 2 班, 均直达徐汇校区');
 insert into Shift values('MXWD2040B', '3','MinHangToXuHui', '闵行到徐汇', 'NormalWorkday', '20:40:00', '21:40:00', '5', '共 2 班, 均直达徐汇校区');
 insert into Shift values('MXWE0730', '1','MinHangToXuHui', '闵行到徐汇', 'NormalWeekendAndLegalHoliday', '7:30:00', '8:30:00', '5', '共 1 班, 直达徐汇校区');
-insert into Shift values('MXWE1630', '2','MinHangToXuHui', '闵行到徐汇', 'NormalWeekendAndLegalHoliday', '12:15:00', '13:15:00', '5', '共 1 班, 直达徐汇校区');
+insert into Shift values('MXWE1630', '2','MinHangToXuHui', '闵行到徐汇', 'NormalWeekendAndLegalHoliday', '16:30:00', '17:30:00', '5', '共 1 班, 直达徐汇校区');
 insert into Shift values('MXHD0730', '3','MinHangToXuHui', '闵行到徐汇', 'HolidayWorkday', '7:30:00', '8:30:00', '5', '共 1 班, 直达徐汇校区');
 insert into Shift values('MXHD1215', '1','MinHangToXuHui', '闵行到徐汇', 'HolidayWorkday', '12:15:00', '13:15:00', '5', '共 1 班, 直达徐汇校区');
 insert into Shift values('MXHD1630A', '2','MinHangToXuHui', '闵行到徐汇', 'HolidayWorkday', '16:30:00', '17:30:00', '5', '共 3 班, 该班直达徐汇校区, 途径罗阳、上中、天钥、交大新村 ');
