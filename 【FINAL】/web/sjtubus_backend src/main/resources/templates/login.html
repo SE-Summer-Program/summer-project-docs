@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg- 4 align-self-center">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center mb-4">SJTUBUS管理员登录</h3>
+                    <form action="/adminlogin" method="post">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-sm-12 align-self-center">
+                                <div class="form-group">
+                                    <div class="input-group default-input-group">
+                                        <input type="text" class="form-control" name="username" placeholder="用户名">
+                                        <span class="input-group-addon"><i class="fa fa-user fa-fw" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <div class="input-group default-input-group">
+                                        <input type="password" class="form-control" name="password" placeholder="密码">
+                                        <span class="input-group-addon"><i class="fa fa-lock fa-fw" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-sm-6 align-self-center">
+                                <button type="submit" class="btn btn-lg btn-block text-white text-uppercase btn-gradient mt-2 mb-4"><span class="py-6">登录</span></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--<div class="row align-items-center justify-content-center">-->
+                        <!--<div class="col-sm-12 align-self-center text-center">-->
+                            <!--<small><span class="text-mute">忘记密码? </span></small>-->
+                            <!--<br>-->
+                            <!--<small><span class="text-mute">没有账号？点我注册 </span></small>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

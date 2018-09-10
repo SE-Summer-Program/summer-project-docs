@@ -1,0 +1,87 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+* {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 300;
+}
+
+.login-block {
+    background: #DE6262; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    background-image: url("../images/sjtu_background.jpg");
+}
+
+.container-fluid, .row {
+    height: 100%;
+}
+
+.input-group-addon {
+    background: #ffffff;
+}
+
+.input-group .form-control {
+    -moz-transition: none 1s;
+    -o-transition: none 1s;
+    -webkit-transition: none 1s;
+    transition: none 1s;
+}
+
+.input-group.default-input-group .form-control {
+    border-right: 0;
+}
+
+.input-group.default-input-group .form-control + .input-group-addon i {
+    border-left: 0;
+    color: #c6cacf;
+}
+.input-group.default-input-group .form-control:focus + .input-group-addon i {
+    border-left: 0;
+    color: #495057;
+}
+
+.input-group.default-input-group .form-control:focus {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #495057;
+
+}
+
+.input-group.default-input-group .form-control:focus + .input-group-addon {
+    outline: 0;
+    border-color: #495057;
+ }
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .125);
+}
+
+.card-title {
+    font-weight: 300;
+}
+
+.btn-gradient, .btn-gradient:focus {
+    background: #00C9FF; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1DE9B6, #1DC5E9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1DE9B6, #1DC5E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    font-size: x-small;
+    box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn-gradient:active{
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/shallow_white"
+    android:layout_marginBottom="@dimen/smallPadding"
+    android:layout_marginHorizontal="@dimen/largePadding"
+    android:paddingHorizontal="@dimen/screenPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_bus_128"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/collect_linename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="闵行到徐汇"/>
+
+        <TextView
+            android:id="@+id/collect_shiftid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="MXWD1230"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/basicPaddingSize">
+        <TextView
+            android:id="@+id/collect_shiftdetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:text="班次详情"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/smallPadding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/shallow_white"/>
+        <Button
+            android:id="@+id/collect_cancel"
+            style="@style/middleButton"
+            android:layout_width="0sp"
+            android:layout_weight="3.5"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_red"
+            android:text="取消收藏"/>
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/shallow_white"/>
+        <Button
+            android:id="@+id/collect_fast"
+            style="@style/middleButton"
+            android:layout_width="0sp"
+            android:layout_weight="3.5"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_red"
+            android:text="快速预约"/>
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/shallow_white"/>
+    </LinearLayout>
+
+</LinearLayout>

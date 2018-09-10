@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp"
+            android:text="@string/bus_plate"
+            />
+        <EditText
+            android:layout_width="220dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:id="@+id/bus_plate"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/seat_num"
+            />
+        <EditText
+            android:layout_width="220dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:id="@+id/seat_num"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/teacher_num"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            />
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/teacher_num" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/student_num"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            />
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/student_num" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="@dimen/largePadding">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="6dp"
+                android:src="@mipmap/icon_telephone_128"/>
+            <com.sjtubus.widget.ClearEditText
+                android:id="@+id/login_phone_edit"
+                style="@style/editText_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                android:inputType="phone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="6dp"
+                android:src="@mipmap/icon_lock_128"/>
+            <com.sjtubus.widget.ClearEditText
+                android:id="@+id/login_pwd_edit"
+                style="@style/editText_base"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/bigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/primary_red"
+        android:text="@string/login"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:layout_marginBottom="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/jaccount_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/icon_sjtu_128"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/jaccount_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jaccount"
+            android:textColor="@color/primary_blue"
+            android:focusable="true"
+            android:clickable="true"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/largePadding"
+        >
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/register"
+            android:textColor="@color/primary_red"
+            android:textSize="14sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/txt_forget_password"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="end"-->
+            <!--android:text="@string/forget_password"-->
+            <!--android:textColor="@color/primary_red"-->
+            <!--android:textSize="14sp"-->
+            <!--android:paddingTop="6dp"-->
+            <!--android:paddingBottom="6dp"-->
+            <!--/>-->
+    </LinearLayout>
+
+</LinearLayout>

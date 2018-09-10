@@ -1,0 +1,113 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="android:textColorSecondary">#ffffff</item>-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--透明状态栏-->
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--透明导航栏-->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--使状态栏，导航栏可绘制-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--设置应用启动图片，视觉优化启动效果-->
+        <item name="android:windowBackground">@drawable/launch_image</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-->线条<-->
+    <style name="line">
+        <item name="android:background">@color/primary_gray</item>
+    </style>
+
+    <style name="line_vertical" parent="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="line_horizontal" parent="line">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="line_personinfo" parent="line_vertical">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/shallow_red</item>
+    </style>
+
+    <style name="editText_base">
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:minHeight">@dimen/normalButtonHeight</item>
+        <item name="android:textColor">@color/primary_red</item>
+        <item name="android:textColorHint">@color/primary_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="colorControlNormal">@color/primary_red</item>
+        <item name="colorControlActivated">@color/primary_red</item>
+    </style>
+
+    <style name="toobar_base">
+        <item name="android:paddingTop">@dimen/toolbarPaddingTop</item>
+        <item name="android:background">@color/primary_red</item>
+        <item name="android:layout_height">@dimen/toolbar_height</item>
+    </style>
+
+    <style name="bigButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/largePadding</item>
+        <item name="android:paddingRight">@dimen/largePadding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/normalButtonHeight</item>
+    </style>
+
+    <style name="routeButton">
+        <item name="android:textColor">@color/primary_red</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_shape</item>
+    </style>
+
+    <style name="middleButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primary_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/smallPadding</item>
+        <item name="android:paddingRight">@dimen/smallPadding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/middleButtonHeight</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="Theme.ToolBar.Menu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+    </style>
+
+    <style name="MyCheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+        <item name="android:colorControlActivated">@color/primary_white</item>
+        <item name="android:colorControlNormal">@color/primary_white</item>
+    </style>
+
+</resources>

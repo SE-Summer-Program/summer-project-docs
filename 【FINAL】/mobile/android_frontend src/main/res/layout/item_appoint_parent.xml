@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:id="@+id/container"
+    android:layout_marginBottom="5dp"
+    android:background="@color/shallow_white"
+    android:layout_marginStart="@dimen/screenPadding"
+    android:layout_marginEnd="@dimen/screenPadding"
+    android:paddingTop="@dimen/smallPadding"
+    android:paddingBottom="@dimen/smallPadding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/basicPaddingSize">
+        <TextView
+            android:id="@+id/appointitem_departuretime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/middleText"
+            android:textStyle="bold"
+            android:textColor="@color/primary_red"/>
+        <TextView
+            android:id="@+id/appointitem_departureplace"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/middlesmallText"/>
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/appointitem_shiftid"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="3"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:gravity="center"/>-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/appointitem_arrivetime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/middleText"/>
+        <TextView
+            android:id="@+id/appointitem_arriveplace"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/middlesmallText"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appointitem_remainseat"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/appointitem_expand"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/more_16"
+        android:layout_gravity="center"/>
+
+    <!--<View-->
+        <!--android:id="@+id/parent_dashed_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:layerType="software"-->
+        <!--android:layout_below="@id/appoint_parent"/>-->
+
+</LinearLayout>

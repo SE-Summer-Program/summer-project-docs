@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/routeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="visible"/>
+
+    <com.yinglan.scrolllayout.ScrollLayout
+        android:id="@+id/chooseRoute_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
+            android:orientation = "vertical"
+            android:background="#FFFFFF"
+            android:focusable="true"
+            android:clickable="true">
+
+            <Button
+                android:id="@+id/MinToXuA"
+                android:text="闵行->徐汇（直达）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/MinToXuB"
+                android:text="闵行->徐汇（途经罗阳、上中、天钥、交大新村）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/MinToXuC"
+                android:text="闵行->徐汇（直达田林）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/MinToXuD"
+                android:text="闵行->徐汇（直达古美）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinA"
+                android:text="徐汇->闵行（直达）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinB"
+                android:text="徐汇->闵行（天钥始发，途径上中、罗阳）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinC"
+                android:text="徐汇->闵行（田林始发，途径古美）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinD"
+                android:text="徐汇->闵行（交大新村始发）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinE"
+                android:text="徐汇->闵行（田林始发）"
+                style="@style/routeButton"/>
+            <Button
+                android:id="@+id/XuToMinF"
+                android:text="徐汇->闵行（古美始发）"
+                style="@style/routeButton"/>
+
+        </LinearLayout>
+
+    </com.yinglan.scrolllayout.ScrollLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/chooseRoute_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_choose_128"
+            app:backgroundTint="#ffffff"/>
+    </RelativeLayout>
+
+</RelativeLayout>

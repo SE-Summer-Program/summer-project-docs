@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    android:background="@color/shallow_white"
+    android:layout_marginStart="@dimen/screenPadding"
+    android:layout_marginEnd="@dimen/screenPadding">
+
+        <Button
+            android:id="@+id/appointitem_reservebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minHeight="0dp"
+            android:background="@color/primary_red"
+            android:textColor="@color/primary_white"
+            android:layout_marginEnd="20dp"
+            android:text="@string/child_reserve"/>
+
+        <Button
+            android:id="@+id/appointitem_collectbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minHeight="0dp"
+            android:background="@color/primary_red"
+            android:textColor="@color/primary_white"
+            android:layout_marginEnd="20dp"
+            android:text="@string/child_collect"/>
+
+        <Button
+            android:id="@+id/appointitem_infobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:minHeight="0dp"
+            android:background="@color/primary_red"
+            android:textColor="@color/primary_white"
+            android:text="@string/schedule_btn"/>
+
+        <Button
+            android:id="@+id/import_rideinfo_btn"
+            android:layout_width="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_height="40dp"
+            android:minHeight="0dp"
+            android:visibility="gone"
+            android:background="@color/primary_red"
+            android:textColor="@color/primary_white"
+            android:text="@string/import_rideinfo"/>
+</LinearLayout>

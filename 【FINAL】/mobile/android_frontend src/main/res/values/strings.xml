@@ -1,0 +1,139 @@
+<resources>
+    <!--全局设置-->
+    <string name="app_name">SJTUBus</string>
+    <string name="sjtubus_host">http://106.14.181.49:8080/</string>
+
+    <!--主界面按钮-->
+    <string name="reserve_btn">预约班车</string>
+    <string name="record_btn">预约记录</string>
+    <string name="position_btn">司机定位</string>
+    <string name="schedule_btn">班次信息</string>
+    <string name="map_btn">路线查询</string>
+    <string name="navigate_btn">实时位置</string>
+    <string name="message_btn">公告</string>
+    <string name="idea_btn">意见</string>
+    <string name="scanQrcode">管理员扫描预约码</string>
+    <string name="write_btn">录入发车信息</string>
+
+    <!--页面toolbar标题 及 侧拉栏-->
+    <string name="person_info">个人信息</string>
+    <string name="reserve_record">预约记录</string>
+    <string name="message">消息</string>
+    <string name="idea">意见</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="title_record">预约记录</string>
+    <string name="title_order">信息填写</string>
+    <string name="userlogin">用户登录</string>
+    <string name="driverlogin">司机登录</string>
+    <string name="adminlogin">管理员登录</string>
+    <string name="gps_position">司机定位</string>
+    <string name="setting">设置</string>
+    <string name="billboard">公告</string>
+    <string name="search">查询</string>
+    <string name="collect">班次收藏</string>
+
+    <!--四种type，三个校区-->
+    <string name="schedule_type1">在校期-周一到周五</string>
+    <string name="schedule_type2">在校期-双休日、节假日</string>
+    <string name="schedule_type3">寒暑假-周一到周五</string>
+    <string name="schedule_type4">寒暑假-双休日</string>
+    <string name="xuhui">徐汇校区</string>
+    <string name="minhang">闵行校区</string>
+    <string name="qibao">七宝校区</string>
+    <string name="anticlockwise">逆时针</string>
+    <string name="clockwise">顺时针</string>
+    <string name="vac_anticlockwise">寒暑假-逆时针</string>
+    <string name="vac_clockwise">寒暑假-顺时针</string>
+
+    <!--登录、注册细节-->
+    <string name="forget_password">忘记密码</string>
+    <string name="not_login">未登录，点击下方登录或注册</string>
+
+    <string name="title_home">SJTU校园巴士</string>
+    <string name="title_schedule">班次信息</string>
+    <string name="title_message">公告</string>
+    <string name="message_none">无消息</string>
+    <string name="jaccount">jaccount统一身份认证</string>
+
+    <!--个人信息细节-->
+    <string name="title_personinfo">个人信息</string>
+    <string name="username">用户名</string>
+    <string name="phone">手机号</string>
+    <string name="credit">信用积分</string>
+    <string name="role">身份</string>
+    <string name="realname">真实姓名</string>
+    <string name="studentnum">学号/工号</string>
+    <string name="logout">退出登录</string>
+    <string name="appoint_code">预约码</string>
+
+    <!--注册细节-->
+    <string name="verify_code">验证码</string>
+    <string name="verify">获取验证码</string>
+    <string name="hint_phone">请输入手机号码</string>
+    <string name="hint_mail">请输入邮箱地址</string>
+    <string name="hint_password">请输入登录密码</string>
+    <string name="password_confirm">请再次输入密码</string>
+    <string name="hint_password_detail">请输入6-16位密码</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_identify">请输入验证码</string>
+    <string name="protocol">我已阅读并同意《SJTUBUS用户协议》</string>
+    <string name="confirm_and_register">确认并注册</string>
+
+    <!--订单细节-->
+    <string name="remark_title">备注信息</string>
+    <string name="order_remark">备注 :</string>
+    <string name="remark">备注</string>
+    <string name="remindtime_title">提醒时间 :</string>
+    <string name="remindtime_default">提前10分钟</string>
+    <string name="phone_title">大陆手机 :</string>
+    <string name="mail_title">邮箱地址 :</string>
+    <string name="front_seat">前排座位</string>
+    <string name="back_seat">后排座位</string>
+    <string name="window_seat">靠窗座位</string>
+    <string name="road_seat">靠过道座位</string>
+    <string name="other_seat">其他特殊要求 :</string>
+    <string name="submit_appoint">预约</string>
+    <string name="set_remind">设置预约提醒(非必需)</string>
+    <string name="set_requirement">设置特殊要求(非必需)</string>
+
+    <!--预约细节-->
+    <string name="appoint_yesterday">前一天</string>
+    <string name="appoint_tomorrow">后一天</string>
+    <string name="child_reserve">预约</string>
+    <string name="detail_info">详细信息</string>
+    <string name="child_collect">收藏</string>
+    <string name="child_shift">详细信息</string>
+
+    <!--预约记录细节-->
+    <string name="remind_info">预约提醒</string>
+    <string name="cancel_info">取消预约</string>
+    <string name="fliter">筛选</string>
+    <string name="sort">排序</string>
+    <string name="vaild_record">未出行</string>
+
+    <!--实时位置细节-->
+    <string name="search_hint">想去哪？</string>
+
+    <!--设置细节-->
+    <string name="user_data">账号资料</string>
+    <string name="user_change">账号切换</string>
+    <string name="appoint_setting">预约设置</string>
+    <string name="term_setting">学期设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="help">帮助</string>
+
+    <string name="import_rideinfo">录入发车信息</string>
+    <string name="teacher_num">教工人数</string>
+    <string name="seat_num">车辆座位数</string>
+    <string name="student_num">非教工人数</string>
+    <string name="bus_plate">车牌号</string>
+
+    <string name="about_us_content">
+        我们是来自上海交通大学电子信息与电气工程学院软件工程专业的SJTUBUS开发小组~\n
+        成员：姚子航、王鑫伟、励颖、王一林\n
+        联系我们：1162526220@qq.com、1351232837@qq.com
+    </string>
+    <string name="user_guide">用户指南</string>
+    <string name="networktips">当前网络不可用!请检查网络设置!</string>
+</resources>

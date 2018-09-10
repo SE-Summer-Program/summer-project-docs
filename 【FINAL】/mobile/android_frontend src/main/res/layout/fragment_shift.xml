@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shallow_gray">
+
+    <LinearLayout
+        android:id="@+id/choose_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="2dp"
+        android:paddingTop="@dimen/smallPadding"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/choose_hint"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/middlebigText"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:background="@color/shallow_gray"
+            android:text="选择站点: "/>
+        <TextView
+            android:id="@+id/choose_station"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/middlebigText"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:background="@color/shallow_gray"
+            android:text="菁菁堂"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shift_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shallow_gray"
+        android:layout_marginVertical="@dimen/screenPadding"/>
+</LinearLayout>

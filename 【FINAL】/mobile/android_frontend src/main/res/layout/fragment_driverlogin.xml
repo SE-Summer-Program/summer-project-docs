@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="@dimen/largePadding">
+
+        <com.sjtubus.widget.ClearEditText
+            android:id="@+id/driverlogin_username_edit"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_username_128"
+            android:hint="@string/hint_username"
+            android:inputType="text"
+            android:layout_marginBottom="30dp"
+            />
+
+        <com.sjtubus.widget.ClearEditText
+            android:id="@+id/driverlogin_pwd_edit"
+            style="@style/editText_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_lock_128"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_driverlogin"
+        style="@style/bigButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/primary_red"
+        android:text="@string/login"
+        />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+@import '~antd/dist/antd.css';
+
+#components-layout-demo-top-side .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(255,255,255,.2);
+  margin: 16px 28px 16px 0;
+  float: left;
+}
+
+h2{
+  margin-left: 531px;
+}
+
+.editable-cell-icon,
+.editable-cell-icon-check {
+  cursor: pointer;
+}
+
+.editable-cell-icon {
+  line-height: 14px;
+  position:relative;
+  left: 20%;
+  top: 50%;
+  margin-top: -7px;
+  display: none;
+}
+
+td:hover .editable-cell-icon {
+  display: inline-block;
+}
+
+.editable-cell-icon:hover,
+.editable-cell-icon-check:hover {
+  color: #108ee9;
+}

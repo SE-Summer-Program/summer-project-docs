@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_person"
+            android:icon="@mipmap/person_info"
+            android:title="@string/person_info" />
+        <item
+            android:id="@+id/navigation_item_reserve"
+            android:icon="@mipmap/bell"
+            android:color="@color/avoscloud_timestamp_gray"
+            android:title="@string/reserve_record" />
+        <item
+            android:id="@+id/navigation_item_collect"
+            android:icon="@mipmap/like"
+            android:title="@string/collect" />
+        <item
+            android:id="@+id/navigation_item_message"
+            android:icon="@mipmap/message"
+            android:color="@color/avoscloud_timestamp_gray"
+
+            android:title="@string/billboard" />
+        <item
+            android:id="@+id/navigation_item_idea"
+            android:icon="@mipmap/idea"
+            android:color="@color/avoscloud_timestamp_gray"
+            android:title="@string/idea" />
+        <item
+            android:id="@+id/navigation_item_help"
+            android:icon="@mipmap/icon_help_128"
+            android:title="@string/help" />
+        <item
+            android:id="@+id/navigation_item_aboutus"
+            android:icon="@mipmap/icon_aboutus_128"
+            android:title="@string/about_us" />
+    </group>
+</menu>

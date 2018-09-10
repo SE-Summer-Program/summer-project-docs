@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:clickable="true"
+        android:visibility="visible"/>
+
+    <com.yinglan.scrolllayout.ScrollLayout
+        android:id="@+id/stationInfo_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <!--<com.yinglan.scrolllayout.content.ContentScrollView-->
+        <ScrollView
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/shallow_gray">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- 站点名 -->
+                <TextView
+                    android:id="@+id/detail_station_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/smallPadding"
+                    android:textSize="@dimen/middleText"
+                    android:textStyle="bold"
+                    android:textColor="@color/shallow_black"/>
+
+                <!-- 逆时针 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/smallPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/anticlockwise"
+                        android:textSize="@dimen/middlesmallText"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary_black"/>
+                    <TextView
+                        android:id="@+id/detail_anticlockwise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/smallText"
+                        android:paddingVertical="@dimen/basicPaddingSize"
+                        android:lineSpacingExtra = "@dimen/basicPaddingSize"/>
+                </LinearLayout>
+
+                <!-- 顺时针 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/smallPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clockwise"
+                        android:textSize="@dimen/middlesmallText"
+                        android:textStyle="bold"
+                        android:textColor="@color/shallow_black"/>
+                    <TextView
+                        android:id="@+id/detail_clockwise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/basicPaddingSize"
+                        android:lineSpacingExtra = "@dimen/basicPaddingSize"/>
+                </LinearLayout>
+
+                <!-- 寒暑假-逆时针 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/smallPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vac_anticlockwise"
+                        android:textSize="@dimen/middlesmallText"
+                        android:textStyle="bold"
+                        android:textColor="@color/shallow_black"/>
+                    <TextView
+                        android:id="@+id/detail_anticlockwise_holiday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/basicPaddingSize"
+                        android:lineSpacingExtra = "@dimen/basicPaddingSize"/>
+                </LinearLayout>
+
+                <!-- 寒暑假-顺时针 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/smallPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vac_clockwise"
+                        android:textSize="@dimen/middlesmallText"
+                        android:textStyle="bold"
+                        android:textColor="@color/shallow_black"/>
+                    <TextView
+                        android:id="@+id/detail_clockwise_holiday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/basicPaddingSize"
+                        android:lineSpacingExtra = "@dimen/basicPaddingSize"/>
+                </LinearLayout>
+
+                <!-- Comment -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/smallPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/middlesmallText"
+                        android:text="@string/remark"
+                        android:textStyle="bold"
+                        android:textColor="@color/shallow_black"/>
+                    <TextView
+                        android:id="@+id/detail_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/basicPaddingSize"
+                        android:lineSpacingExtra = "@dimen/basicPaddingSize"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--</com.yinglan.scrolllayout.content.ContentScrollView>-->
+        </ScrollView>
+
+    </com.yinglan.scrolllayout.ScrollLayout>
+
+    <com.yinglan.scrolllayout.ScrollLayout
+        android:id="@+id/chooseStation_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.yinglan.scrolllayout.content.ContentScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="40dp"
+                android:paddingBottom="40dp"
+                android:orientation = "vertical"
+                android:background="#FFFFFF"
+                android:focusable="true"
+                android:clickable="true">
+
+                <Button
+                    android:id="@+id/nearestStation"
+                    style="@style/routeButton"
+                    android:text="最近的站点" />
+                <Button
+                    android:id="@+id/JJT"
+                    android:text="菁菁堂"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/XYY"
+                    android:text="校医院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/DSY"
+                    android:text="东上院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/DZY"
+                    android:text="东中院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/XTSG"
+                    android:text="新图书馆"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/XZBL"
+                    android:text="行政B楼"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/DXXY"
+                    android:text="电信学院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/KXM"
+                    android:text="凯旋门"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/JDXY"
+                    android:text="机动学院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/MM"
+                    android:text="庙门"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/CJXY"
+                    android:text="船建学院"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/WXYXL"
+                    android:text="文选医学楼"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/XSFWZX"
+                    android:text="学生服务中心"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/XQXSGY"
+                    android:text="西区学生公寓"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/DSCYDL"
+                    android:text="第四餐饮大楼"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/HLSHZX"
+                    android:text="华联生活中心"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/BYGTSG"
+                    android:text="包玉刚图书馆"
+                    style="@style/routeButton"/>
+                <Button
+                    android:id="@+id/CLXY"
+                    android:text="材料学院"
+                    style="@style/routeButton"/>
+
+            </LinearLayout>
+
+        </com.yinglan.scrolllayout.content.ContentScrollView>
+
+    </com.yinglan.scrolllayout.ScrollLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/chooseStation_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_choose_128"
+            app:backgroundTint="#ffffff"/>
+    </RelativeLayout>
+
+</RelativeLayout>

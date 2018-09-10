@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_appointment"
+        android:layout_width="match_parent"
+        style="@style/toobar_base"
+        app:titleTextColor="@color/primary_white"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/appoint_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/primary_white"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/appoint_messagebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/primary_red"
+        android:paddingBottom="@dimen/smallPadding">
+        <TextView
+            android:id="@+id/appoint_yesterday"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="@string/appoint_yesterday"
+            android:textColor="@color/primary_white"
+            android:paddingLeft="@dimen/largePadding"/>
+        <ImageView
+            android:id="@+id/appoint_calendar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/canlendar_16"/>
+        <TextView
+            android:id="@+id/appoint_date"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/primary_white" />
+        <ImageView
+            android:id="@+id/appoint_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/next_16"/>
+        <TextView
+            android:id="@+id/appoint_nextday"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:text="@string/appoint_tomorrow"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textColor="@color/primary_white"
+            android:paddingRight="@dimen/largePadding"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appoint_left"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_gray"
+        android:textSize="@dimen/middleText"
+        android:gravity="center"
+        android:background="@color/shallow_gray"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/appoint_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:background="@color/shallow_gray">
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
